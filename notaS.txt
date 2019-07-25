@@ -52,3 +52,8 @@ $ ionic cordova build android
 $ ionic cordova run android --device
 ========================
 
+origin:
+curl "https://www.googleapis.com/calendar/v3/calendars/{CalendarID}/events?access_token={Access_token}" -H "Content-Type: application/json" -d ' { "start": { "dateTime": "2012-07-11T12:47:31+05:30" }, "end": { "dateTime": "2012-07-11T22:47:31+05:30" }, "attendees": [ { "email": "{Attendee_Email}" } ], "reminders": { "overrides":[ ] } }' -v
+-------
+
+curl "https://www.googleapis.com/calendar/v3/calendars/primary/events?access_token=ya29.GltQB2bhBtiVbf7kAuTUlUzg0OHiJyoclGrbmmCAgyZnihXi8FNYKEGSxtvcHBdHlvrjqdCquiJSg2QuzgSwH2hCw7mC3RoSIjbPFjNKx4J7SWjZ8jQoWCIVlany" -H "Content-Type: application/json"  -d ' { summary: "Teste123", location: "Teste123", start: { dateTime: "2019-07-25T11:00:00.000-03:00", timeZone: "America/Sao_Paulo" }, end: { dateTime: "2019-07-25T11:25:00.000-03:00", timeZone: "America/Sao_Paulo" } }' -v

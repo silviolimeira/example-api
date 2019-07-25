@@ -13,11 +13,14 @@ import { environment } from "src/environments/environment";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { GooglePlus } from "@ionic-native/google-plus/ngx";
 
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(),
     AppRoutingModule,
 

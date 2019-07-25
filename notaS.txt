@@ -62,6 +62,8 @@ $ ionic cordova run android --device
 
 Angular Post Format:
 https://www.concretepage.com/angular/angular-httpclient-post
+When to use Angular's forRoot() method:
+https://medium.com/slackernoon/when-to-use-angulars-forroot-method-400094a0ebb7
 
 origin:
 curl "https://www.googleapis.com/calendar/v3/calendars/{CalendarID}/events?access_token={Access_token}" -H "Content-Type: application/json" -d ' { "start": { "dateTime": "2012-07-11T12:47:31+05:30" }, "end": { "dateTime": "2012-07-11T22:47:31+05:30" }, "attendees": [ { "email": "{Attendee_Email}" } ], "reminders": { "overrides":[ ] } }' -v

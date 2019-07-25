@@ -24,6 +24,14 @@ https://www.npmjs.com/package/cordova-support-google-services
 Set Up Google Play Services to Your Project Android:
 https://developers.google.com/android/guides/setup
 
+Google Plus:
+$ ionic cordova plugin add cordova-plugin-googleplus --variable REVERSED_CLIENT_ID=myreversedclientid
+$ npm install @ionic-native/google-plus
+
+Ionic Cordova plugin googleplus:
+$ ionic cordova plugin add cordova-plugin-googleplus
+$ npm install @ionic-native/google-plus
+
 
 ========================
 Build:
@@ -60,3 +68,24 @@ curl "https://www.googleapis.com/calendar/v3/calendars/{CalendarID}/events?acces
 -------
 
 curl "https://www.googleapis.com/calendar/v3/calendars/primary/events?access_token=ya29.GltQB2bhBtiVbf7kAuTUlUzg0OHiJyoclGrbmmCAgyZnihXi8FNYKEGSxtvcHBdHlvrjqdCquiJSg2QuzgSwH2hCw7mC3RoSIjbPFjNKx4J7SWjZ8jQoWCIVlany" -H "Content-Type: application/json"  -d ' { summary: "Teste123", location: "Teste123", start: { dateTime: "2019-07-25T11:00:00.000-03:00", timeZone: "America/Sao_Paulo" }, end: { dateTime: "2019-07-25T11:25:00.000-03:00", timeZone: "America/Sao_Paulo" } }' -v
+
+
+Add support for android or IOS:
+$ ionic cordova platform add android --save
+$ ionic cordova platform add ios --save
+
+build the apk
+$ ionic cordova build android --prod --release
+
+run/install apk in debug mode
+$ ionic cordova build android
+$ ionic cordova run android --device
+========================
+
+FIX ERROR: net::ERR_CONNECTION_REFUSED
+net::ERR_CONNECTION_REFUSED (http://localhost:8080/)
+
+ionic cordova plugin rm cordova-plugin-ionic-webview
+ionic cordova platforms remove android
+cordova plugin add cordova-plugin-ionic-webview
+npm install @ionic-native/ionic-webview

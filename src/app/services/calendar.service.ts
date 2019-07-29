@@ -15,7 +15,6 @@ export interface CalendarEvent {
 export class CalendarService {
   url =
     "https://www.googleapis.com/calendar/v3/calendars/primary/events?access_token=";
-
   constructor(private http: HttpClient) {}
 
   // createArticle(article: Article): Observable<Article> {
@@ -31,6 +30,7 @@ export class CalendarService {
 
   postArticle(article: any, access_token: any): Observable<HttpResponse<any>> {
     let uri = this.url + access_token;
+
     let httpHeaders = new HttpHeaders({
       "Content-Type": "application/json"
     });

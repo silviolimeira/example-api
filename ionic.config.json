@@ -1,7 +1,8 @@
 {
   "name": "example-gapi",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }

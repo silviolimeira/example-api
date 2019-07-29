@@ -1,0 +1,7 @@
+{
+  "appId": "io.sicemal.starter",
+  "appName": "MyApp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
